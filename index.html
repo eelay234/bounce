@@ -120,9 +120,6 @@
 			    	which = Math.floor(Math.random() * 5);
 			    	b.style = 'fill:'+color[which];
 			    	b.setColor('fill:'+color[which]);
-			      // set to some other color using your random color code
-			      // a.setColor('#'+Math.floor(Math.random()*16777215).toString(16));
-			      // b.setColor('#'+Math.floor(Math.random()*16777215).toString(16));
 			    }
 			  }
 			}
@@ -178,7 +175,7 @@
 	}
 	document.onmouseup = function(e){
 		time_pressed = getTime() - mousedown_time;
-		console.log('You held your mouse down for', time_pressed, 'miliseconds.');
+		//console.log('You held your mouse down for', time_pressed, 'miliseconds.');
 		playground.getBigger(time_pressed/10);
 		playground.createNewCircle(e.x,e.y);
 	}
